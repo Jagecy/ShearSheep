@@ -54,7 +54,6 @@
                 background: #FF9A00;
             }
         </style>
-
     </head>
     <body>
         <canvas id="canvas" class="fullscreen"></canvas>
@@ -149,14 +148,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/YandexSheeps.loader.js'
+                    unityLoader.src = 'Build/Test.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/754ff4b3bb02f77bf95214b43abb8539.data.unityweb',
-                                frameworkUrl: 'Build/dd22f02da84019bff8d3513bc44842cf.js.unityweb',
-                                codeUrl: 'Build/5dc2ee55f8335cebcd166e6578e25714.wasm.unityweb',
+                                dataUrl: 'Build/0d0d89b654d106d8963967a141112269.data.unityweb',
+                                frameworkUrl: 'Build/569e84afba3f3ba27d0f209b1d26f379.js.unityweb',
+                                codeUrl: 'Build/3c7f689c1518abb46381673c37b4eee3.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'DefaultCompany',
                                 productName: 'WebTemplate',
